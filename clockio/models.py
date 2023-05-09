@@ -9,4 +9,4 @@ class User(models.Model):
     is_active = models.BooleanField(default=True)
 
     def __str__(self) -> str:
-        return f'\nid: {self.id}\nemail: {self.email}\nfirst_name: {self.first_name}\nlast_name: {self.last_name}\nis_active: {self.is_active}'
+        return f'\nemail: {self.email}\nfirst_name: {self.first_name}\nlast_name: {self.last_name}\nis_active: {self.is_active}'
