@@ -2,6 +2,12 @@
 {% load static %}
 {% block content %}
     <div>
-        <h1>Olá mundo CLOCKIO</h1>
+        {% if users %}
+        {% for user in users %}
+            <li class="users">{{ user.email }}</li>
+        {% endfor %}
+        {% else %}
+            <h1>Não existem usuários</h1>
+        {% endif %}
     </div>
 {% endblock %} 
