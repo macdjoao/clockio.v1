@@ -2,7 +2,6 @@ from django.db import models
 
 
 class User(models.Model):
-    id = models.UUIDField(primary_key=True, auto_created=True)
     email = models.EmailField(null=False, blank=False, unique=True)
     password = models.CharField(null=False, blank=False)
     first_name = models.CharField(null=False, blank=False)
