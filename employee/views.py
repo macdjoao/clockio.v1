@@ -5,7 +5,7 @@ def home(request):
     return render(request, 'employee/pages/home.html')
 
 
-def about(request):
+def about(request, id: int):
     return render(request, 'employee/pages/about.html')
 
 
