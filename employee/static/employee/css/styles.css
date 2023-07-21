@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.6rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #13141f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    max-width: 144rem;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.main-header-container {
+    background: #13141f;
+}
+
+.main-logo {
+    font-size: 4rem;
+    color: burlywood;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.main-logo-icon {
+    margin-right: 2rem;
+}
+
+.search-form {
+    border: .2rem solid darkgrey;
+    max-width: 64rem;
+    margin: 0 auto;
+    border-radius: .4rem;
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+.search-input, .search-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.search-button:focus {
+    outline: 1px solid black;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.search-input {
+    width: 100%;
+    padding-right: 4rem;
+}
+
+.search-form:focus-within {
+    border-color: blueviolet;
+    background: white;
+}
+
+.search-form:focus-within .search-button {
+    color: red;
+}
+
+.main-content {
+    padding-top: 0;
+}
+
+.main-content-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 4rem;
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: peru;
+    color: azure;
+    padding: 4rem;
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+}
+
+.main-footer a:hover {
+    filter: brightness(.8);
+}
