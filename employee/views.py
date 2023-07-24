@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'employee/pages/home.html')
+    return render(request, 'employee/pages/home.html', context={
+        'name': 'João',
+        'created_at': ''
+    })
 
 
 def about(request, id: int):

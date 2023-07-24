@@ -6,6 +6,10 @@
 
 <div class="main-content main-content-list container">
     <h1>Olá Home</h1>
+    {% for employee in employees %}
+        <h2>{{ employee.name }}</h2>
+        <h2>{{ employee.created_at/date:"d/m/Y"}} às {{ employee.created_at/date:"H:i" }}</h2>
+    {% endfor %}
 </div>
 
 {% endblock content %}
