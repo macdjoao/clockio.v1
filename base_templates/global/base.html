@@ -1,4 +1,10 @@
-{% include 'employee/partials/head.html' %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    {% include 'employee/partials/head.html' %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
 
 <body>
     {% include 'employee/partials/header.html' %}
