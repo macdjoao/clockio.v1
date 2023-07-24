@@ -1,14 +1,9 @@
-{% include 'employee/partials/head.html' %}
+{% extends 'global/base.html' %}
 
-<body>
-    {% include 'employee/partials/header.html' %}
-    {% include 'employee/partials/search.html' %}
+{% block content %}
 
-    <main class="main-content-container">
-        <div class="main-content main-content-list container"></div>
-    </main>
+<div class="main-content main-content-list container">
+    <h1>Home</h1>
+</div>
 
-    {% include 'employee/partials/footer.html' %}
-</body>
-
-</html>
+{% endblock content %}
