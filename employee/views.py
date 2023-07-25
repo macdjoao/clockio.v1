@@ -1,10 +1,14 @@
 from django.shortcuts import render
+from faker import Faker
+
+fake = Faker()
 
 
 def home(request):
     return render(request, 'employee/pages/home.html', context={
-        'name': 'João',
-        'created_at': ''
+        'id': fake.random_number(digits=2),
+        'name': fake.first_name(),
+        'created_at': fake.date_time()
     })
 
 
