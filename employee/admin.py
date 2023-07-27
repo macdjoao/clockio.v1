@@ -1,3 +1,9 @@
 from django.contrib import admin
+from employee.models import Role, Clock
 
-# Register your models here.
+
+class RoleAdmin(admin.ModelAdmin):
+    ...
+
+
+admin.site.register(Role, RoleAdmin)
