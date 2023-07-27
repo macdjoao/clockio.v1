@@ -10,7 +10,6 @@ class Role(models.Model):
 
 
 class Clock(models.Model):
-    slug = models.SlugField()
     is_published = models.BooleanField(default=True)
     entry_date = models.DateTimeField()
     departure_date = models.DateTimeField()
@@ -18,8 +17,8 @@ class Clock(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
 
     def __str__(self) -> str:
-        return self.user
+        return self.user.username
 
 # Para trabalhar com imagens
 # poetry add Pillow
-# img = models.ImageField(upload_to='employee/imgs/%Y/%m/%d/')
+# img = models.ImageField(upload_to='employee/covers/%Y/%m/%d/')
